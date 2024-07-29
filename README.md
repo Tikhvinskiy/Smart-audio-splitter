@@ -47,7 +47,7 @@ worker.run()
 from SmartAudioSplitterTk import SmartAudioSplitterTk
 
 
-worker = SmartAudioSplitter('full_filename')
+worker = SmartAudioSplitter()
 worker.start()
 ```
 
