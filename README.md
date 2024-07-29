@@ -23,7 +23,34 @@ FFmpeg, ffprobe is a part of the Ubuntu packages. If you dont have ones use this
 
 - sudo apt-get install ffmpeg
 
+SmartAudioSplitter is tested on Python >= 3.8 and ubuntu 22.04
+
 Samples:
+
+```Python
+from SmartAudioSplitter import SmartAudioSplitter
+
+
+"""Parameters:   full_filename, add_pause=True, pause_len=2000,
+                 silence_len=500, level_dBFS='calc',
+                 multiprocessing_on=True,
+                 n_split=4, n_jobs=2, how='split_by_silence',
+                 out_filename='part', format_='mp3', bitrate='128k',
+                 tags=None, log_to_file=False, store=None"""
+
+worker = SmartAudioSplitter('full_filename')
+worker.run()
+
+
+#or use tkinter GUI interface
+
+from SmartAudioSplitterTk import SmartAudioSplitterTk
+
+
+worker = SmartAudioSplitter('full_filename')
+worker.start()
+```
+
 
 <img src="https://github.com/Tikhvinskiy/Smart-audio-splitter/blob/main/screen1.jpg" width="80%">
 
