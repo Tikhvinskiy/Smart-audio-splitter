@@ -11,13 +11,13 @@ SmartAudioSplitter splits large audio files into sections by silence. Contains a
 
 ### Installation.
 
+SmartAudioSplitter uses pydub, so you need to install pydub (tested on 0.25.1 version):
+
+- pip install pydub==0.25.1
+
 Sometimes Python installations [don't include](https://stackoverflow.com/questions/76105218/why-does-tkinter-or-turtle-seem-to-be-missing-or-broken-shouldnt-it-be-part) Tkinter components. 
 On Ubuntu and Debian based systems use this:
  - sudo apt-get install python3-tk
-
-SmartAudioSplitter uses pydub, so you need install pydub (tested on 0.25.1 version):
-
-- pip install pydub==0.25.1
 
 FFmpeg, ffprobe is a part of the Ubuntu packages. If you dont have ones use this:
 
@@ -49,6 +49,8 @@ from SmartAudioSplitterTk import SmartAudioSplitterTk
 
 worker = SmartAudioSplitterTk()
 worker.start()
+
+#or run in console: python SmartAudioSplitterTk.py
 ```
 
 
