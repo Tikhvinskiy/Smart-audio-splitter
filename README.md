@@ -5,7 +5,7 @@ SmartAudioSplitter splits large audio files into sections by silence. Contains a
 ### App.
 
 - SmartAudioSplitter.py - main app uses pydub, ffmpeg, ffprobe
-- SmartAudioSplitterTk.py -  the class that inherits methods from SmartAudioSplitter class.
+- SmartAudioSplitterTk.py -  this class inherits methods from SmartAudioSplitter class.
    SmartAudioSplitterTk uses the standard Python interface to the Tcl/Tk GUI toolkit.
    Tkinter are available on most Unix platforms, including macOS, as well as on Windows systems.
 
